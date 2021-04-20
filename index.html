@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--- if we forget to add this meta tag otherwise our design won't responsive ---->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="screen_setting">
+  <div style="text-align: center; margin-bottom: 20px;"><h1>Image Gallery</h1></div>
+    <div class="gallery">
+      <div class="image"><span><img id="1" src="lahore/1.jpg" alt="1"></span></div>
+      <div class="image"><span><img id="2" src="lahore/2.jpg" alt="2"></span></div>
+      <div class="image"><span><img id="3" src="lahore/3.jpg" alt="3"></span></div>
+      <div class="image"><span><img id="4" src="lahore/4.jpg" alt="4"></span></div>
+      <div class="image"><span><img id="5" src="lahore/5.jpg" alt="5"></span></div>
+      <div class="image"><span><img id="6" src="lahore/6.jpg" alt="6"></span></div>
+      <div class="image"><span><img id="7" src="lahore/7.jpg" alt="7"></span></div>
+      <div class="image"><span><img id="8" src="lahore/8.jpg" alt="8"></span></div>
+      <div class="image"><span><img id="9" src="lahore/9.jpg" alt="9"></span></div>
+      <div class="image"><span><img id="10" src="lahore/10.jpg" alt="10"></span></div>
+      <div class="image"><span><img id="11" src="lahore/11.jpg" alt="11"></span></div>
+      <div class="image"><span><img id="12" src="lahore/12.jpg" alt="12"></span></div>
+      <div class="image"><span><img id="13" src="lahore/13.jpg" alt="13"></span></div>
+      <div class="image"><span><img id="14" src="lahore/14.jpg" alt="14"></span></div>
+      <div class="image"><span><img id="15" src="lahore/15.jpg" alt="15"></span></div>
+      <div class="image"><span><img id="16" src="lahore/16.jpg" alt="16"></span></div>
+      <div class="image"><span><img id="17" src="lahore/17.jpg" alt="17"></span></div>
+      <div class="image"><span><img id="18" src="lahore/18.jpg" alt="18"></span></div>
+      <div class="image"><span><img id="19" src="lahore/19.jpg" alt="19"></span></div>
+      <div class="image"><span><img id="20" src="lahore/20.jpg" alt="20"></span></div>
+      <div class="image"><span><img id="21" src="lahore/21.jpg" alt="21"></span></div>
+      <div class="image"><span><img id="22" src="lahore/22.jpg" alt="22"></span></div>
+      <div class="image"><span><img id="23" src="lahore/23.jpg" alt="23"></span></div>
+      <div class="image"><span><img id="24" src="lahore/24.jpg" alt="24"></span></div>
+      <div class="image"><span><img id="25" src="lahore/25.jpg" alt="25"></span></div>
+
+        <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!--the close button-->
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+      <script src="myscript.js"></script>
+      <!--Following code adds tool-tip on each image.-->
+      <script>
+         //image objects
+         let imageEls = document.getElementsByTagName("img");
+         for(let i=1;i<imageEls.length;i++){
+            //imageEls[i].title=imageEls[i].alt;  //to show separate name of each image
+            //OR
+            imageEls[i].title="Lahore, Paksitan";
+         }
+      </script>
+       <!--<div id="demo1" class="myownimagestyle"></div>
+        Following script adds the images automatically from the source folder.
+        <script>
+        let x = "", y = "", i;
+        for (i=1; i<=39; i++) {
+          y = y + "<img src=lahore/"+i+".jpg>";
+        }
+        document.getElementById("demo1").innerHTML =y;
+      </script>-->
+    </div>
+  </div>
+</body>
+</html>
